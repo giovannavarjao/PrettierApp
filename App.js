@@ -1,12 +1,40 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
+import TxtComponent from './src/components/TxtComponents';
+import TouchComponents from './src/components/TouchComponent';
+
+alert
 
 export default function App() {
   return (
+    <View>
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+     <TxtComponent>
+     <Text>oi</Text> 
+      <Text>eu</Text> 
+      <Text>oi</Text> 
+      </TxtComponent>
+      </View>
+
+
+     <TouchComponents>
+        <Text> Click here!</Text>
+     </TouchComponents>
+
+
+     <TouchComponents>
+     <Image 
+                source={require('./src/assets/images/botão.jpg')} 
+                style={styles.image1}
+                resizeMode='cover'
+            />
+     </TouchComponents>
+
+     <TouchComponents>
+      <Text> Finale here! É isso fml flw tmjt</Text>
+     </TouchComponents>
+
+     </View>
   );
 }
 
